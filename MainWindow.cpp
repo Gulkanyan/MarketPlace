@@ -2,7 +2,7 @@
 #include "ui_MainWindow.h"
 
 #include "AdminMainPage.h"
-
+#include "Superadmin.h"
 #include <QShortcut>
 #include <QMessageBox>
 
@@ -11,13 +11,15 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
+    this->setWindowIcon(QIcon(":/Icons/Resources/Icons/hide.jpg"));
     initUI();
 }
 
 void MainWindow::initUI()
 {
     ui->PushButton_Login->setShortcut(Qt::Key_Enter);
+
+
 }
 
 MainWindow::~MainWindow()
@@ -30,10 +32,9 @@ void MainWindow::on_PushButton_Login_clicked()
     QString username = ui->lineEdit_Username->text();
     QString password = ui->lineEdit_Password->text();
 
-    if(username == "test" && password == "1234")
+    if(username == "admin" && password == "1234")
     {
-        QMessageBox::information(this , " Login", " Username and password are correct");
-        AdminMainPage *adminPage = new AdminMainPage();
+        Superadmin *adminPage = new Superadmin();
         adminPage->show();
         this->close();
         this->~MainWindow();
@@ -43,4 +44,5 @@ void MainWindow::on_PushButton_Login_clicked()
         QMessageBox::warning(this, " Login" ," Username and password is not correct");
     }
 }
+
 

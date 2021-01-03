@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtSql>
+#include <QSqlDatabase>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,6 +19,12 @@ public:
 
 private slots:
     void on_PushButton_Login_clicked();
+
+    void on_show_hide_pushButton__clicked();
+
+    void on_show_hide_pushButton_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     void initUI();

@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,18 +19,30 @@ INCLUDEPATH += GUI/Admin_Pages
 
 SOURCES += \
     GUI/Admin_Pages/AdminMainPage.cpp \
+    GUI/Admin_Pages/CreateAdmin.cpp \
+    GUI/Admin_Pages/CreateUser.cpp \
+    GUI/Admin_Pages/Superadmin.cpp \
     main.cpp \
     MainWindow.cpp
 
 HEADERS += \
     GUI/Admin_Pages/AdminMainPage.h \
+    GUI/Admin_Pages/CreateAdmin.h \
+    GUI/Admin_Pages/CreateUser.h \
+    GUI/Admin_Pages/Superadmin.h \
     MainWindow.h
 
 FORMS += \
     GUI/Admin_Pages/AdminMainPage.ui \
+    GUI/Admin_Pages/CreateAdmin.ui \
+    GUI/Admin_Pages/CreateUser.ui \
+    GUI/Admin_Pages/Superadmin.ui \
     MainWindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    Resources.qrc
