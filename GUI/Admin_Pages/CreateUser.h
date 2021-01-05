@@ -18,6 +18,8 @@ public:
 private slots:
     void on_Back_pushButton_clicked();
 
+    void on_save_pushButton_clicked();
+
 private:
     Ui::CreateUser *ui;
 };

@@ -18,6 +18,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 INCLUDEPATH += GUI/Admin_Pages
 
 SOURCES += \
+    Core/Database/CodeStarter.cpp \
+    Core/Database/CoreGlobals.cpp \
+    Core/Database/DataBase.cpp \
+    Core/Database/Utils/StandardQueries.cpp \
     GUI/Admin_Pages/AdminMainPage.cpp \
     GUI/Admin_Pages/CreateAdmin.cpp \
     GUI/Admin_Pages/CreateUser.cpp \
@@ -26,6 +30,10 @@ SOURCES += \
     MainWindow.cpp
 
 HEADERS += \
+    Core/Database/CodeStarter.h \
+    Core/Database/CoreGlobals.h \
+    Core/Database/DataBase.h \
+    Core/Database/Utils/StandardQueries.h \
     GUI/Admin_Pages/AdminMainPage.h \
     GUI/Admin_Pages/CreateAdmin.h \
     GUI/Admin_Pages/CreateUser.h \

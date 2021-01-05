@@ -18,8 +18,6 @@ MainWindow::MainWindow(QWidget *parent)
 void MainWindow::initUI()
 {
     ui->PushButton_Login->setShortcut(Qt::Key_Enter);
-
-
 }
 
 MainWindow::~MainWindow()

@@ -59,7 +59,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>LogIN</string>
+      <string>LogIn</string>
      </property>
     </widget>
     <widget class="QLabel" name="usernameLabel">
@@ -107,6 +107,25 @@
       <bool>true</bool>
      </property>
     </widget>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>40</y>
+      <width>241</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>LogIn to your Market Place</string>
+    </property>
    </widget>
   </widget>
  </widget>
