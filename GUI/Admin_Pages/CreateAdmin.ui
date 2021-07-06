@@ -6,21 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
-    <height>300</height>
+    <width>900</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(251, 194, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(255, 85, 255);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: rgb(255, 85, 255);
+font: bold 14px;
+min-width: 10em;
+padding: 6px;
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLineEdit" name="Username_lineEdit">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>90</y>
-      <width>113</width>
-      <height>20</height>
+      <x>310</x>
+      <y>99</y>
+      <width>211</width>
+      <height>31</height>
      </rect>
     </property>
    </widget>
@@ -28,9 +40,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>250</y>
-      <width>75</width>
-      <height>23</height>
+      <y>540</y>
+      <width>191</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -40,10 +52,10 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>90</y>
-      <width>60</width>
-      <height>15</height>
+      <x>80</x>
+      <y>94</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -53,10 +65,10 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>120</y>
-      <width>60</width>
-      <height>15</height>
+      <x>80</x>
+      <y>150</y>
+      <width>211</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -66,10 +78,10 @@
    <widget class="QPushButton" name="save_pushButton">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>250</y>
-      <width>75</width>
-      <height>23</height>
+      <x>280</x>
+      <y>300</y>
+      <width>191</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -79,10 +91,10 @@
    <widget class="QLineEdit" name="Password_lineEdit">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>120</y>
-      <width>113</width>
-      <height>20</height>
+      <x>310</x>
+      <y>150</y>
+      <width>211</width>
+      <height>31</height>
      </rect>
     </property>
    </widget>
@@ -91,14 +103,15 @@
      <rect>
       <x>130</x>
       <y>30</y>
-      <width>141</width>
+      <width>186</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>-1</pointsize>
       <weight>75</weight>
+      <italic>false</italic>
       <bold>true</bold>
      </font>
     </property>

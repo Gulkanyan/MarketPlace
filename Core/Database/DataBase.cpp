@@ -46,9 +46,6 @@ bool DataBase::populate()
     if(containsData())
         return true;
 
-    if (!dropTables() || !createTables() || !doStandartInserts())
-        return false;
-
     return true;
 }
 

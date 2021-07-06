@@ -6,21 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
-    <height>300</height>
+    <width>900</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(251, 194, 255), stop:1 rgba(255, 255, 255, 255));
+color: rgb(255, 85, 255);
+border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color: rgb(255, 85, 255);
+font: bold 14px;
+min-width: 10em;
+padding: 6px;
+</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="save_pushButton">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>250</y>
-      <width>75</width>
-      <height>23</height>
+      <x>325</x>
+      <y>302</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -31,9 +43,9 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>90</y>
-      <width>60</width>
-      <height>15</height>
+      <y>114</y>
+      <width>186</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -44,9 +56,9 @@
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>120</y>
-      <width>60</width>
-      <height>15</height>
+      <y>164</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -56,30 +68,30 @@
    <widget class="QLineEdit" name="Username_lineEdit">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>90</y>
-      <width>113</width>
-      <height>20</height>
+      <x>320</x>
+      <y>119</y>
+      <width>186</width>
+      <height>31</height>
      </rect>
     </property>
    </widget>
    <widget class="QLineEdit" name="Password_lineEdit">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>120</y>
-      <width>113</width>
-      <height>20</height>
+      <x>320</x>
+      <y>169</y>
+      <width>186</width>
+      <height>31</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="Back_pushButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>250</y>
-      <width>75</width>
-      <height>23</height>
+      <x>20</x>
+      <y>552</y>
+      <width>191</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -91,14 +103,15 @@
      <rect>
       <x>130</x>
       <y>30</y>
-      <width>141</width>
+      <width>186</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>14</pointsize>
+      <pointsize>-1</pointsize>
       <weight>75</weight>
+      <italic>false</italic>
       <bold>true</bold>
      </font>
     </property>
